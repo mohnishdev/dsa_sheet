@@ -1,0 +1,255 @@
+# Note: Headers should have a blue gradient background (e.g., from-blue-500 to-blue-700)
+Category,Name,LeetCode Link,Attempt 1,Attempt 2,Attempt 3,Attempt 4,Attempt 5,Attempt 6,Attempt 7,Attempt 8,Attempt 9,Attempt 10
+Arrays,Largest element in the array,https://leetcode.com/problems/maximum-number/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Second Smallest Element In Array,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Second Largest Element,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Smallest Element In Array,https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Move Zeros,https://leetcode.com/problems/move-zeroes/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Reverse A Array,https://leetcode.com/problems/reverse-string/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Remove Duplicates from Sorted Array,https://leetcode.com/problems/remove-duplicates-from-sorted-array/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Sort Colors,https://leetcode.com/problems/sort-colors/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Single Number,https://leetcode.com/problems/single-number/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Best Time to Buy and Sell Stock,https://leetcode.com/problems/best-time-to-buy-and-sell-stock/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Maximum Difference of zeros and ones in a Binary String,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Two Sum,https://leetcode.com/problems/two-sum/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Maximum Subarray,https://leetcode.com/problems/maximum-subarray/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Missing Number,https://leetcode.com/problems/missing-number/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Running Sum of 1d Array,https://leetcode.com/problems/running-sum-of-1d-array/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Maximum Product Difference Between Two Pairs,https://leetcode.com/problems/maximum-product-difference-between-two-pairs/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Minimum Number of Days to Make m Bouquets,https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold,https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Find the Highest Altitude,https://leetcode.com/problems/find-the-highest-altitude/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Find the maximum of every subarray of size k,https://leetcode.com/problems/sliding-window-maximum/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Sqrt(x),https://leetcode.com/problems/sqrtx/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Subarray Sum Equals K,https://leetcode.com/problems/subarray-sum-equals-k/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Fair Candy Swap,https://leetcode.com/problems/fair-candy-swap/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Majority Element,https://leetcode.com/problems/majority-element/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Find All Anagrams in a String,https://leetcode.com/problems/find-all-anagrams-in-a-string/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Capacity To Ship Packages Within D Days,https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Longest K unique characters substring,https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Search in Rotated Sorted Array,https://leetcode.com/problems/search-in-rotated-sorted-array/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,4Sum,https://leetcode.com/problems/4sum/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,3Sum,https://leetcode.com/problems/3sum/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Find Pivot Index,https://leetcode.com/problems/find-pivot-index/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,How Many Numbers Are Smaller Than the Current Number,https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Longest Repeating Character Replacement,https://leetcode.com/problems/longest-repeating-character-replacement/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Arrays,Find the Duplicate Number,https://leetcode.com/problems/find-the-duplicate-number/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Number System and Bitwise operations,Single Number,https://leetcode.com/problems/single-number/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Number System and Bitwise operations,Swap Two Numbers,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Number System and Bitwise operations,Find the Duplicate Number,https://leetcode.com/problems/find-the-duplicate-number/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Number System and Bitwise operations,Odd or Even Numbers,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Number System and Bitwise operations,Counting Bits,https://leetcode.com/problems/counting-bits/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Number System and Bitwise operations,Exceptionally odd,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Number System and Bitwise operations,Single Number II,https://leetcode.com/problems/single-number-ii/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Number System and Bitwise operations,Gray Code,https://leetcode.com/problems/gray-code/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Number System and Bitwise operations,Base 7,https://leetcode.com/problems/base-7/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Number System and Bitwise operations,Convert a Number to Hexadecimal,https://leetcode.com/problems/convert-a-number-to-hexadecimal/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Recursion and Backtracking,Pow(x, n),https://leetcode.com/problems/powx-n/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Recursion and Backtracking,N-th Tribonacci Number,https://leetcode.com/problems/n-th-tribonacci-number/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Recursion and Backtracking,Subsets,https://leetcode.com/problems/subsets/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Recursion and Backtracking,Power of Three,https://leetcode.com/problems/power-of-three/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Recursion and Backtracking,Min Cost Climbing Stairs,https://leetcode.com/problems/min-cost-climbing-stairs/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Recursion and Backtracking,Letter Combinations of a Phone Number,https://leetcode.com/problems/letter-combinations-of-a-phone-number/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Recursion and Backtracking,N-Queens,https://leetcode.com/problems/n-queens/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Recursion and Backtracking,Fibonacci Number,https://leetcode.com/problems/fibonacci-number/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Recursion and Backtracking,Climbing Stairs,https://leetcode.com/problems/climbing-stairs/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Recursion and Backtracking,Permutations,https://leetcode.com/problems/permutations/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Recursion and Backtracking,Power of Four,https://leetcode.com/problems/power-of-four/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Recursion and Backtracking,Valid Palindrome,https://leetcode.com/problems/valid-palindrome/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Recursion and Backtracking,Sum of All Subset XOR Totals,https://leetcode.com/problems/sum-of-all-subset-xor-totals/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Recursion and Backtracking,Generate Parentheses,https://leetcode.com/problems/generate-parentheses/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Recursion and Backtracking,Decode String,https://leetcode.com/problems/decode-string/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Sorting,Save Patients,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Sorting,Monk and Nice Strings,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Sorting,Bubble Sort,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Sorting,Sam Height,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Sorting,Merge Sort,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Sorting,Maximum Sum of Building Speed,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Sorting,Merge Two Sorted Array,https://leetcode.com/problems/merge-sorted-array/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Sorting,Squares of a Sorted Array,https://leetcode.com/problems/squares-of-a-sorted-array/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Sorting,Count Inversions of an Array,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Extra Problems,Pairs of Songs With Total Durations Divisible by 60,https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Extra Problems,Cinema Seat Allocation,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Extra Problems,Get Maximum in Generated Array,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Extra Problems,Maximum Product of Word Lengths,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Extra Problems,Prison Cells After N Days,https://leetcode.com/problems/prison-cells-after-n-days/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Extra Problems,My Calendar I,https://leetcode.com/problems/my-calendar-i/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Extra Problems,Shuffle the Array,https://leetcode.com/problems/shuffle-the-array/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Extra Problems,Count Good Meals,https://leetcode.com/problems/count-good-meals/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Extra Problems,Two Sum Less Than K,https://leetcode.com/problems/two-sum-less-than-k/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Extra Problems,Check if array is palindrome,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Extra Problems,Seperate Array Element into Even & Odd,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Extra Problems,Maximum Product of Two Elements in an Array,https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Matrix,Spiral Matrix,https://leetcode.com/problems/spiral-matrix/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Matrix,Spiral Matrix II,https://leetcode.com/problems/spiral-matrix-ii/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Matrix,Interval List Intersections,https://leetcode.com/problems/interval-list-intersections/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Matrix,Cells with Odd Values in a Matrix,https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Matrix,Search a 2D Matrix,https://leetcode.com/problems/search-a-2d-matrix/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Matrix,Richest Customer Wealth,https://leetcode.com/problems/richest-customer-wealth/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Matrix,Number Of Rectangles That Can Form The Largest Square,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Matrix,Largest Local Values in a Matrix,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Matrix,Flipping an Image,https://leetcode.com/problems/flipping-an-image/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Matrix,Search a 2D Matrix II,https://leetcode.com/problems/search-a-2d-matrix-ii/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Matrix,Lucky Numbers in a Matrix,https://leetcode.com/problems/lucky-numbers-in-a-matrix/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Matrix,Sort the Students by Their Kth Score,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Matrix,Max Increase to Keep City Skyline,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Matrix,Candy Crush,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Matrix,Transpose Matrix,https://leetcode.com/problems/transpose-matrix/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Matrix,Delete Greatest Value in Each Row,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Matrix,Number of Laser Beams in a Bank,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Matrix,Diagonal Traverse,https://leetcode.com/problems/diagonal-traverse/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Reverse Linked List,https://leetcode.com/problems/reverse-linked-list/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Remove Linked List Elements,https://leetcode.com/problems/remove-linked-list-elements/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Palindrome Linked List,https://leetcode.com/problems/palindrome-linked-list/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Remove Duplicates from Sorted List II,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Add Two Numbers,https://leetcode.com/problems/add-two-numbers/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Reverse Nodes in k-Group,https://leetcode.com/problems/reverse-nodes-in-k-group/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Copy List with Random Pointer,https://leetcode.com/problems/copy-list-with-random-pointer/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Swap Nodes in Pairs,https://leetcode.com/problems/swap-nodes-in-pairs/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Delete Node in a Linked List,https://leetcode.com/problems/delete-node-in-a-linked-list/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Middle of the Linked List,https://leetcode.com/problems/middle-of-the-linked-list/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Linked List Cycle,https://leetcode.com/problems/linked-list-cycle/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Linked List Cycle II,https://leetcode.com/problems/linked-list-cycle-ii/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Convert Binary Number in a Linked List to Integer,https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Check linked list with a loop is palindrome or not,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Design Circular Deque,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Design HashMap,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Insert into a Sorted Circular Linked List,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Design Circular Queue,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Design Browser History,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Design HashSet,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,LRU Cache,https://leetcode.com/problems/lru-cache/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Linked List,Find length of Loop in Linked List,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Stack,Next Smaller Element,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Stack,Implement Queue using Stacks,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Stack,Previous Smaller Element,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Stack,Product of the Last K Numbers,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Stack,Next Greater Element I,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Stack,Daily Temperatures,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Stack,Reverse Integer,https://leetcode.com/problems/reverse-integer/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Stack,Maximum Nesting Depth of the Parentheses,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Stack,Remove All Adjacent Duplicates In String,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Stack,Valid Parentheses,https://leetcode.com/problems/valid-parentheses/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Stack,Baseball Game,https://leetcode.com/problems/baseball-game/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Stack,Min Stack,https://leetcode.com/problems/min-stack/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Stack,Previous Greater Element,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Stack,Remove All Adjacent Duplicates in String II,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Stack,Design a Stack With Increment Operation,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Stack,Next Greater Element II,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Stack,Remove K Digits,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Queue,Design Circular Deque,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Queue,Design Circular Queue,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Queue,Implement Stack using Queues,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Queue,Design Hit Counter,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Queue,First Unique Character in a stream of characters,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Queue,Moving Average from Data Stream,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Queue,Sliding Window Maximum,https://leetcode.com/problems/sliding-window-maximum/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Heaps and Priority Queues,Maximum Product of Two Elements in an Array,https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Heaps and Priority Queues,The K Weakest Rows in a Matrix,https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Heaps and Priority Queues,Last Stone Weight,https://leetcode.com/problems/last-stone-weight/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Heaps and Priority Queues,Top K Frequent Elements,https://leetcode.com/problems/top-k-frequent-elements/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Heaps and Priority Queues,Reduce Array Size to The Half,https://leetcode.com/problems/reduce-array-size-to-the-half/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Heaps and Priority Queues,Kth Largest Element in a Stream,https://leetcode.com/problems/kth-largest-element-in-a-stream/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Heaps and Priority Queues,Merge Intervals,https://leetcode.com/problems/merge-intervals/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Heaps and Priority Queues,Merge k Sorted Lists,https://leetcode.com/problems/merge-k-sorted-lists/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Heaps and Priority Queues,Sliding Window Median,https://leetcode.com/problems/sliding-window-median/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Heaps and Priority Queues,Maximum Product After K Increments,https://leetcode.com/problems/maximum-product-after-k-increments/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Heaps and Priority Queues,Find Median from Data Stream,https://leetcode.com/problems/find-median-from-data-stream/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Heaps and Priority Queues,Relative Ranks,https://leetcode.com/problems/relative-ranks/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Heaps and Priority Queues,Meeting Rooms,https://leetcode.com/problems/meeting-rooms/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,N-ary Tree Preorder Traversal,https://leetcode.com/problems/n-ary-tree-preorder-traversal/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Binary Tree Preorder Traversal,https://leetcode.com/problems/binary-tree-preorder-traversal/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Same Tree,https://leetcode.com/problems/same-tree/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Binary Tree Inorder Traversal,https://leetcode.com/problems/binary-tree-inorder-traversal/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Binary Tree Level Order Traversal,https://leetcode.com/problems/binary-tree-level-order-traversal/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Maximum Depth of Binary Tree,https://leetcode.com/problems/maximum-depth-of-binary-tree/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Binary Tree Postorder Traversal,https://leetcode.com/problems/binary-tree-postorder-traversal/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,N-ary Tree Level Order Traversal,https://leetcode.com/problems/n-ary-tree-level-order-traversal/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Binary Tree Pruning,https://leetcode.com/problems/binary-tree-pruning/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Vertical Order Traversal of a Binary Tree,https://leetcode.com/problems/binary-tree-vertical-order-traversal/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Kth Smallest Element in a BST,https://leetcode.com/problems/kth-smallest-element-in-a-bst/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Merge Two Binary Trees,https://leetcode.com/problems/merge-two-binary-trees/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Range Sum of BST,https://leetcode.com/problems/range-sum-of-bst/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Search in a Binary Search Tree,https://leetcode.com/problems/search-in-a-binary-search-tree/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Maximum Depth of N-ary Tree,https://leetcode.com/problems/maximum-depth-of-n-ary-tree/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Two Sum IV - Input is a BST,https://leetcode.com/problems/two-sum-iv-input-is-a-bst/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Diameter of Binary Tree,https://leetcode.com/problems/diameter-of-binary-tree/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Construct Binary Tree from Preorder and Inorder Traversal,https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Create Binary Tree From Descriptions,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Minimum Depth of Binary Tree,https://leetcode.com/problems/minimum-depth-of-binary-tree/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Balanced Binary Tree,https://leetcode.com/problems/balanced-binary-tree/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Construct Binary Tree from Preorder and Postorder Traversal,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Convert Sorted Array to Binary Search Tree,https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Binary Tree Zigzag Level Order Traversal,https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Invert Binary Tree,https://leetcode.com/problems/invert-binary-tree/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,N-ary Tree Postorder Traversal,https://leetcode.com/problems/n-ary-tree-postorder-traversal/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Average of Levels in Binary Tree,https://leetcode.com/problems/average-of-levels-in-binary-tree/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Validate Binary Search Tree,https://leetcode.com/problems/validate-binary-search-tree/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Minimum Distance Between BST Nodes,https://leetcode.com/problems/minimum-distance-between-bst-nodes/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Add One Row to Tree,https://leetcode.com/problems/add-one-row-to-tree/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Implement Trie ll,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Maximum XOR With an Element From Array,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Design File System,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Longest Common Prefix,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Count Distinct Substrings,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Complete String,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Trees,Implement Trie (Prefix Tree),N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Find if Path Exists in Graph,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Snakes and Ladders,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Island Perimeter,https://leetcode.com/problems/island-perimeter/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Max Area of Island,https://leetcode.com/problems/max-area-of-island/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Journey to the Moon,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Couples Holding Hands,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Rotting Oranges,https://leetcode.com/problems/rotting-oranges/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Minimum Degree of a Connected Trio in a Graph,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Keys and Rooms,https://leetcode.com/problems/keys-and-rooms/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Flood Fill,https://leetcode.com/problems/flood-fill/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Time Needed to Inform All Employees,https://leetcode.com/problems/time-needed-to-inform-all-employees/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Word Ladder,https://leetcode.com/problems/word-ladder/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Number of Closed Islands,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Is Graph Bipartite,https://leetcode.com/problems/is-graph-bipartite/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Redundant Connection,https://leetcode.com/problems/redundant-connection/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Course Schedule II,https://leetcode.com/problems/course-schedule-ii/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Redundant Connection II,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Accounts Merge,https://leetcode.com/problems/accounts-merge/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Course Schedule,https://leetcode.com/problems/course-schedule/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Graphs,Graph Connectivity With Threshold,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Greedy Algorithms,The Maze II,https://leetcode.com/problems/the-maze-ii/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Greedy Algorithms,Path With Minimum Effort,https://leetcode.com/problems/path-with-minimum-effort/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Greedy Algorithms,Network Delay Time,https://leetcode.com/problems/network-delay-time/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Greedy Algorithms,Most Stones Removed with Same Row or Column,https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Greedy Algorithms,Min Cost to Connect All Points,https://leetcode.com/problems/min-cost-to-connect-all-points/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Greedy Algorithms,Connecting Cities With Minimum Cost,https://leetcode.com/problems/connecting-cities-with-minimum-cost/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Greedy Algorithms,Shortest Path in Weighted undirected graph,https://leetcode.com/problems/shortest-path-in-weighted-undirected-graph/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Greedy Algorithms,Optimize Water Distribution in a Village,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Dynamic Programming,Maximum Height by Stacking Cuboids,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Dynamic Programming,Edit Distance,https://leetcode.com/problems/edit-distance/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Dynamic Programming,House Robber,https://leetcode.com/problems/house-robber/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Dynamic Programming,Coin Change II,https://leetcode.com/problems/coin-change-ii/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Dynamic Programming,House Robber II,https://leetcode.com/problems/house-robber-ii/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Dynamic Programming,Maximum Length of Repeated Subarray,https://leetcode.com/problems/maximum-length-of-repeated-subarray/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Dynamic Programming,Longest Increasing Subsequence,https://leetcode.com/problems/longest-increasing-subsequence/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Dynamic Programming,Longest Common Subsequence,https://leetcode.com/problems/longest-common-subsequence/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Dynamic Programming,Jump Game,https://leetcode.com/problems/jump-game/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Dynamic Programming,Stone Game IV,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Dynamic Programming,Jump Game II,https://leetcode.com/problems/jump-game-ii/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Dynamic Programming,Stone Game III,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Dynamic Programming,Stone Game II,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Dynamic Programming,Stone Game V,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Dynamic Programming,Stone Game VII,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Dynamic Programming,Divisor Game,https://leetcode.com/problems/divisor-game/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Dynamic Programming,Stone Game,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Hashing & Pattern Matching,Design Hashset using Linear Probing,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Hashing & Pattern Matching,Longest Consecutive Sequence,https://leetcode.com/problems/longest-consecutive-sequence/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Hashing & Pattern Matching,Last Match,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Hashing & Pattern Matching,Design HashSet using Quadratic Probing,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Hashing & Pattern Matching,Decode the Message,https://leetcode.com/problems/decode-the-message/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Hashing & Pattern Matching,First occourance of an element in array,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Hashing & Pattern Matching,Encode and Decode TinyURL,https://leetcode.com/problems/encode-and-decode-tinyurl/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Hashing & Pattern Matching,Find the City With the Smallest Number of Neighbors at a Threshold Distance,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Hashing & Pattern Matching,Shortest Palindrome,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Hashing & Pattern Matching,Stone Game VIII,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Hashing & Pattern Matching,Design HashSet Using Chaining,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Hashing & Pattern Matching,Find Substring With Given Hash Value,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Hashing & Pattern Matching,Valid Sudoku,https://leetcode.com/problems/valid-sudoku/,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+Hashing & Pattern Matching,Longest Chunked Palindrome Decomposition,N/A,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
