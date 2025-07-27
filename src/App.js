@@ -2,6 +2,13 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { data } from './data.js'; // Import named export 'data' from data.js
 import './App.css';
 
+// Function to get ordinal suffix (1st, 2nd, 3rd, etc.)
+const getOrdinal = (n) => {
+  const s = ['th', 'st', 'nd', 'rd'];
+  const v = n % 100;
+  return n + (s[(v - 20) % 10] || s[v] || s[0]);
+};
+
 const App = () => {
   const [dataState, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
@@ -9,11 +16,10 @@ const App = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [topicFilter, setTopicFilter] = useState('');
   const [difficultyFilter, setDifficultyFilter] = useState('');
-  const [itemsPerPage, setItemsPerPage] = useState(10); // New state for items per page
+  const [itemsPerPage, setItemsPerPage] = useState(10);
 
   // Initialize data and load from local storage
   useEffect(() => {
-    // Load data from data.js and merge with local storage
     const savedData = JSON.parse(localStorage.getItem('dsaSheetData')) || {};
     const updatedData = data.map((row) => ({
       ...row,
@@ -42,7 +48,6 @@ const App = () => {
       )
     );
 
-    // Save to local storage
     const savedData = JSON.parse(localStorage.getItem('dsaSheetData')) || {};
     savedData[id] = savedData[id] || {};
     savedData[id][attempt] = !savedData[id][attempt];
@@ -56,7 +61,7 @@ const App = () => {
     return matchesTopic && matchesDifficulty;
   };
 
-  // Memoize handleFilterChange to avoid unnecessary re-renders
+  // Memoize handleFilterChange
   const handleFilterChange = useCallback(() => {
     const filtered = dataState.filter((row) =>
       applyFilters(row, topicFilter, difficultyFilter)
@@ -73,7 +78,7 @@ const App = () => {
   // Handle items per page change
   const handleItemsPerPageChange = (e) => {
     setItemsPerPage(Number(e.target.value));
-    setCurrentPage(1); // Reset to first page when items per page changes
+    setCurrentPage(1);
   };
 
   // Pagination logic
@@ -123,12 +128,15 @@ const App = () => {
             <option value="Hard">Hard</option>
           </select>
         </div>
-        <button onClick={() => {
-          setTopicFilter('');
-          setDifficultyFilter('');
-          setFilteredData(dataState);
-          setCurrentPage(1);
-        }} className="reset-button">
+        <button
+          onClick={() => {
+            setTopicFilter('');
+            setDifficultyFilter('');
+            setFilteredData(dataState);
+            setCurrentPage(1);
+          }}
+          className="reset-button"
+        >
           Reset Filters
         </button>
       </div>
@@ -141,14 +149,9 @@ const App = () => {
               <th>Task Name</th>
               <th>Topic</th>
               <th>Difficulty</th>
-              <th>Due Date</th>
-              <th>Status</th>
               {Array.from({ length: 10 }, (_, i) => (
                 <th key={i} className="attempt-header">
-                  <span className="tooltip">
-                    Attempt {i + 1}
-                    <span className="tooltip-text">Track attempt {i + 1}</span>
-                  </span>
+                  {getOrdinal(i + 1)}
                 </th>
               ))}
             </tr>
@@ -171,8 +174,6 @@ const App = () => {
                     {row.Difficulty}
                   </span>
                 </td>
-                <td>{row['Due Date']}</td>
-                <td>{row.Status}</td>
                 {Array.from({ length: 10 }, (_, i) => (
                   <td key={i} className="text-center">
                     <input
