@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { data } from './data.js'; // Import named export 'data' from data.js
+import { data } from './data.js';
 import './App.css';
 
 // Function to get ordinal suffix (1st, 2nd, 3rd, etc.)
@@ -17,12 +17,16 @@ const App = () => {
   const [topicFilter, setTopicFilter] = useState('');
   const [difficultyFilter, setDifficultyFilter] = useState('');
   const [itemsPerPage, setItemsPerPage] = useState(10);
+  const [editingTags, setEditingTags] = useState(null);
+  const [newTag, setNewTag] = useState('');
+  const [showTagsModal, setShowTagsModal] = useState(null);
 
   // Initialize data and load from local storage
   useEffect(() => {
     const savedData = JSON.parse(localStorage.getItem('dsaSheetData')) || {};
     const updatedData = data.map((row) => ({
       ...row,
+      tags: savedData[row.id]?.tags || [],
       ...Object.keys(savedData[row.id] || {}).reduce((acc, key) => {
         if (key.startsWith('Attempt')) {
           acc[key] = savedData[row.id][key];
@@ -51,6 +55,49 @@ const App = () => {
     const savedData = JSON.parse(localStorage.getItem('dsaSheetData')) || {};
     savedData[id] = savedData[id] || {};
     savedData[id][attempt] = !savedData[id][attempt];
+    localStorage.setItem('dsaSheetData', JSON.stringify(savedData));
+  };
+
+  // Handle tag addition
+  const handleAddTag = (id) => {
+    if (newTag.trim() === '') return;
+    const updatedData = dataState.map((row) =>
+      row.id === id
+        ? { ...row, tags: [...(row.tags || []), newTag.trim()] }
+        : row
+    );
+    setData(updatedData);
+    setFilteredData(
+      updatedData.filter((row) =>
+        applyFilters(row, topicFilter, difficultyFilter)
+      )
+    );
+    setNewTag('');
+    setEditingTags(null);
+
+    const savedData = JSON.parse(localStorage.getItem('dsaSheetData')) || {};
+    savedData[id] = savedData[id] || {};
+    savedData[id].tags = updatedData.find((row) => row.id === id).tags;
+    localStorage.setItem('dsaSheetData', JSON.stringify(savedData));
+  };
+
+  // Handle tag removal
+  const handleRemoveTag = (id, tagIndex) => {
+    const updatedData = dataState.map((row) =>
+      row.id === id
+        ? { ...row, tags: row.tags.filter((_, index) => index !== tagIndex) }
+        : row
+    );
+    setData(updatedData);
+    setFilteredData(
+      updatedData.filter((row) =>
+        applyFilters(row, topicFilter, difficultyFilter)
+      )
+    );
+
+    const savedData = JSON.parse(localStorage.getItem('dsaSheetData')) || {};
+    savedData[id] = savedData[id] || {};
+    savedData[id].tags = updatedData.find((row) => row.id === id).tags;
     localStorage.setItem('dsaSheetData', JSON.stringify(savedData));
   };
 
@@ -149,9 +196,15 @@ const App = () => {
               <th>Task Name</th>
               <th>Topic</th>
               <th>Difficulty</th>
-              {Array.from({ length: 10 }, (_, i) => (
+              <th>Due Date</th>
+              <th>Status</th>
+              <th>Tags</th>
+              {Array.from({ length: 5 }, (_, i) => (
                 <th key={i} className="attempt-header">
-                  {getOrdinal(i + 1)}
+                  <span className="tooltip">
+                    {getOrdinal(i + 1)}
+                    <span className="tooltip-text">Attempt {i + 1}</span>
+                  </span>
                 </th>
               ))}
             </tr>
@@ -174,13 +227,136 @@ const App = () => {
                     {row.Difficulty}
                   </span>
                 </td>
-                {Array.from({ length: 10 }, (_, i) => (
+                <td>{row['Due Date']}</td>
+                <td>{row.Status}</td>
+                <td className="tags-cell">
+                  {editingTags === row.id ? (
+                    <div className="tag-input-container">
+                      <input
+                        type="text"
+                        value={newTag}
+                        onChange={(e) => setNewTag(e.target.value)}
+                        className="tag-input"
+                        placeholder="Add tag..."
+                        onKeyPress={(e) => {
+                          if (e.key === 'Enter') handleAddTag(row.id);
+                        }}
+                      />
+                      <button
+                        onClick={() => handleAddTag(row.id)}
+                        className="tag-save-button"
+                      >
+                        Save
+                      </button>
+                      <button
+                        onClick={() => setEditingTags(null)}
+                        className="tag-cancel-button"
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="tags-container">
+                      {(row.tags || []).slice(0, 2).map((tag, index) => (
+                        <span key={index} className="tag-badge">
+                          {tag}
+                          <button
+                            className="tag-remove-button"
+                            onClick={() => handleRemoveTag(row.id, index)}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="h-4 w-4"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M6 18L18 6M6 6l12 12"
+                              />
+                            </svg>
+                          </button>
+                        </span>
+                      ))}
+                      {(row.tags || []).length > 2 && (
+                        <button
+                          className="see-more-button"
+                          onClick={() => setShowTagsModal(row.id)}
+                        >
+                          See More
+                        </button>
+                      )}
+                      <button
+                        onClick={() => setEditingTags(row.id)}
+                        className="add-tag-button"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 4v16m8-8H4"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  )}
+                  {showTagsModal === row.id && (
+                    <div className="modal-overlay">
+                      <div className="modal-content">
+                        <h3 className="modal-title">All Tags for {row['Task Name']}</h3>
+                        <div className="modal-tags">
+                          {(row.tags || []).map((tag, index) => (
+                            <span key={index} className="tag-badge modal-tag">
+                              {tag}
+                              <button
+                                className="tag-remove-button"
+                                onClick={() => handleRemoveTag(row.id, index)}
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  className="h-4 w-4"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke="currentColor"
+                                >
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M6 18L18 6M6 6l12 12"
+                                  />
+                                </svg>
+                              </button>
+                            </span>
+                          ))}
+                        </div>
+                        <button
+                          onClick={() => setShowTagsModal(null)}
+                          className="modal-close-button"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  )}
+                </td>
+                {Array.from({ length: 5 }, (_, i) => (
                   <td key={i} className="text-center">
                     <input
                       type="checkbox"
                       checked={row[`Attempt${i + 1}`]}
                       onChange={() => handleCheckboxChange(row.id, `Attempt${i + 1}`)}
-                      className="checkbox"
+                      className="checkbox attempt-checkbox"
                       title={`Attempt ${i + 1}`}
                     />
                   </td>
