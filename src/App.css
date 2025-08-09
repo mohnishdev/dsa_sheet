@@ -144,7 +144,6 @@ html, body {
   padding: 0.75rem;
   font-size: 0.85rem;
   color: #1f2937;
-  /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
   vertical-align: middle;
 }
 
@@ -223,170 +222,167 @@ html, body {
   transform: translateX(-50%) translateY(-5px);
 }
 
-.tags-cell {
+.hints-cell {
   display: flex;
   align-items: center;
 }
 
-.tags-container {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex-wrap: nowrap;
-}
-
-.tag-badge {
-  position: relative;
-  background-color: #e0e7ff;
-  color: #1e40af;
-  padding: 0.3rem 0.75rem;
-  border-radius: 1rem;
-  font-size: 0.8rem;
-  font-weight: 500;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-}
-
-.tag-remove-button {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid #1e40af;
-  border-radius: 50%;
-  cursor: pointer;
-  color: #1e40af;
-  padding: 0.2rem;
-  width: 1rem;
-  height: 1rem;
-  transition: all 0.2s ease;
-}
-
-.tag-remove-button:hover {
-  background: #1e40af;
-  color: #ffffff;
-  transform: translate(-50%, -50%) scale(1.1);
-}
-
-.tag-badge:hover .tag-remove-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tag-badge:hover {
-  background-color: #c3dafe;
-}
-
-.see-more-button {
-  background-color: #edf2f7;
-  color: #1e40af;
-  padding: 0.3rem 0.75rem;
-  border-radius: 1rem;
-  font-size: 0.8rem;
-  font-weight: 500;
-  cursor: pointer;
-  border: none;
-  transition: all 0.3s ease;
-}
-
-.see-more-button:hover {
-  background-color: #c3dafe;
-  transform: translateY(-1px);
-}
-
-.add-tag-button {
+.view-hints-button {
   background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
   color: #ffffff;
-  padding: 0.3rem;
-  border-radius: 50%;
-  font-size: 0.9rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
-  width: 1.5rem;
-  height: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: all 0.3s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-.add-tag-button:hover {
+.view-hints-button:hover {
   background: linear-gradient(135deg, #06b6d4 0%, #4f46e5 100%);
-  transform: scale(1.15);
+  transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
 }
 
-.tag-input-container {
+.hint-input-container {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.tag-input {
+.hint-input {
   padding: 0.3rem;
   border-radius: 0.5rem;
   border: 1px solid #d1d5db;
   background: rgba(255, 255, 255, 0.95);
   font-size: 0.8rem;
   color: #1e40af;
-  width: 80px;
+  width: 100%;
   transition: all 0.3s ease;
 }
 
-.tag-input:focus {
+.hint-input:focus {
   outline: none;
   border-color: #4f46e5;
   box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.25);
 }
 
-.tag-save-button, .tag-cancel-button {
-  padding: 0.3rem 0.75rem;
+.hint-add-button, .hint-save-button, .hint-cancel-button, .hint-edit-button, .hint-remove-button {
+  padding: 0.3rem;
   border-radius: 0.5rem;
   font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.tag-save-button {
+.hint-add-button {
+  background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+  color: #ffffff;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.hint-add-button:hover {
+  background: linear-gradient(135deg, #06b6d4 0%, #4f46e5 100%);
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
+}
+
+.hint-save-button {
   background-color: #4f46e5;
   color: #ffffff;
+  padding: 0.3rem 0.75rem;
 }
 
-.tag-save-button:hover {
+.hint-save-button:hover {
   background-color: #06b6d4;
   transform: translateY(-1px);
 }
 
-.tag-cancel-button {
+.hint-cancel-button {
   background-color: #f43f5e;
   color: #ffffff;
+  padding: 0.3rem 0.75rem;
 }
 
-.tag-cancel-button:hover {
+.hint-cancel-button:hover {
   background-color: #e11d48;
   transform: translateY(-1px);
+}
+
+.hint-edit-button, .hint-remove-button {
+  background: rgba(255, 255, 255, 0.9);
+  color: #1e40af;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #1e40af;
+  border-radius: 50%;
+}
+
+.hint-edit-button:hover, .hint-remove-button:hover {
+  background: #1e40af;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.hint-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hint-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #e0e7ff;
+  color: #1e40af;
+  padding: 0.3rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.hint-display:hover {
+  background-color: #c3dafe;
+}
+
+.hint-text {
+  flex: 1;
+  white-space: normal;
+}
+
+.hint-actions {
+  display: flex;
+  gap: 0.3rem;
 }
 
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 100;
+  z-index: 1000;
   animation: fadeIn 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .modal-content {
@@ -394,12 +390,14 @@ html, body {
   backdrop-filter: blur(12px);
   border-radius: 0.75rem;
   padding: 1.5rem;
-  width: 100%;
+  width: 90%;
   max-width: 400px;
-  max-height: 50vh;
+  max-height: 80vh;
   overflow-y: auto;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   animation: slideIn 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-title {
@@ -409,33 +407,11 @@ html, body {
   margin-bottom: 1rem;
 }
 
-.modal-tags {
+.modal-hints {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 0.5rem;
   margin-bottom: 1rem;
-}
-
-.modal-tag {
-  position: relative;
-  background-color: #e0e7ff;
-  color: #1e40af;
-  padding: 0.3rem 0.75rem;
-  border-radius: 1rem;
-  font-size: 0.85rem;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-}
-
-.modal-tag:hover .tag-remove-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-tag:hover {
-  background-color: #c3dafe;
 }
 
 .modal-close-button {
@@ -615,29 +591,24 @@ html, body {
     font-size: 0.85rem;
   }
 
-  .tag-badge, .see-more-button, .tag-input, .tag-save-button, .tag-cancel-button, .modal-tag {
+  .view-hints-button, .hint-input, .hint-save-button, .hint-cancel-button, .hint-edit-button, .hint-remove-button {
     font-size: 0.75rem;
     padding: 0.25rem 0.5rem;
   }
 
-  .add-tag-button {
+  .hint-add-button {
     width: 1.25rem;
     height: 1.25rem;
   }
 
-  .tag-remove-button {
-    width: 0.9rem;
-    height: 0.9rem;
-  }
-
-  .tag-input {
-    width: 70px;
+  .hint-input {
+    width: 100%;
   }
 
   .modal-content {
     padding: 1rem;
     max-width: 90%;
-    max-height: 60vh;
+    max-height: 70vh;
   }
 
   .modal-title {
@@ -698,28 +669,23 @@ html, body {
     padding: 0.3rem;
   }
 
-  .tag-badge, .see-more-button, .tag-input, .tag-save-button, .tag-cancel-button, .modal-tag {
+  .view-hints-button, .hint-input, .hint-save-button, .hint-cancel-button, .hint-edit-button, .hint-remove-button {
     font-size: 0.7rem;
     padding: 0.2rem 0.4rem;
   }
 
-  .add-tag-button {
+  .hint-add-button {
     width: 1rem;
     height: 1rem;
   }
 
-  .tag-remove-button {
-    width: 0.8rem;
-    height: 0.8rem;
-  }
-
-  .tag-input {
-    width: 60px;
+  .hint-input {
+    width: 100%;
   }
 
   .modal-content {
     padding: 0.75rem;
-    max-height: 50vh;
+    max-height: 60vh;
   }
 
   .modal-title {
@@ -728,6 +694,10 @@ html, body {
 
   .modal-close-button {
     padding: 0.3rem 0.75rem;
+  }
+
+  .hint-text {
+    font-size: 0.75rem;
   }
 
   .attempt-header,

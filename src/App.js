@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { createPortal } from 'react-dom';
 import { data } from './data.js';
 import './App.css';
 
@@ -9,6 +10,150 @@ const getOrdinal = (n) => {
   return n + (s[(v - 20) % 10] || s[v] || s[0]);
 };
 
+const Modal = ({ isOpen, onClose, taskName, hints, onAddHint, onEditHint, onRemoveHint }) => {
+  const [newHint, setNewHint] = useState('');
+  const [editingHint, setEditingHint] = useState(null);
+  const [editingHintText, setEditingHintText] = useState('');
+
+  if (!isOpen) return null;
+
+  return createPortal(
+    <div className="modal-overlay">
+      <div className="modal-content">
+        <h3 className="modal-title">Hints for {taskName}</h3>
+        <div className="modal-hints">
+          {(hints || []).map((hint, index) => (
+            <div key={index} className="hint-item">
+              {editingHint === index ? (
+                <div className="hint-input-container">
+                  <input
+                    type="text"
+                    value={editingHintText}
+                    onChange={(e) => setEditingHintText(e.target.value)}
+                    className="hint-input"
+                    placeholder="Edit hint..."
+                    onKeyPress={(e) => {
+                      if (e.key === 'Enter') {
+                        onEditHint(index);
+                        setEditingHint(null);
+                        setEditingHintText('');
+                      }
+                    }}
+                  />
+                  <button
+                    onClick={() => {
+                      onEditHint(index);
+                      setEditingHint(null);
+                      setEditingHintText('');
+                    }}
+                    className="hint-save-button"
+                  >
+                    Save
+                  </button>
+                  <button
+                    onClick={() => setEditingHint(null)}
+                    className="hint-cancel-button"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              ) : (
+                <div className="hint-display">
+                  <span className="hint-text">{hint}</span>
+                  <div className="hint-actions">
+                    <button
+                      className="hint-edit-button"
+                      onClick={() => {
+                        setEditingHint(index);
+                        setEditingHintText(hint);
+                      }}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-4 w-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      className="hint-remove-button"
+                      onClick={() => onRemoveHint(index)}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-4 w-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+        <div className="hint-input-container">
+          <input
+            type="text"
+            value={newHint}
+            onChange={(e) => setNewHint(e.target.value)}
+            className="hint-input"
+            placeholder="Add new hint..."
+            onKeyPress={(e) => {
+              if (e.key === 'Enter') {
+                onAddHint(newHint);
+                setNewHint('');
+              }
+            }}
+          />
+          <button
+            onClick={() => {
+              onAddHint(newHint);
+              setNewHint('');
+            }}
+            className="hint-add-button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 4v16m8-8H4"
+              />
+            </svg>
+          </button>
+        </div>
+        <button onClick={onClose} className="modal-close-button">
+          Close
+        </button>
+      </div>
+    </div>,
+    document.getElementById('modal-root')
+  );
+};
+
 const App = () => {
   const [dataState, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
@@ -17,16 +162,14 @@ const App = () => {
   const [topicFilter, setTopicFilter] = useState('');
   const [difficultyFilter, setDifficultyFilter] = useState('');
   const [itemsPerPage, setItemsPerPage] = useState(10);
-  const [editingTags, setEditingTags] = useState(null);
-  const [newTag, setNewTag] = useState('');
-  const [showTagsModal, setShowTagsModal] = useState(null);
+  const [showHintsModal, setShowHintsModal] = useState(null);
 
   // Initialize data and load from local storage
   useEffect(() => {
     const savedData = JSON.parse(localStorage.getItem('dsaSheetData')) || {};
     const updatedData = data.map((row) => ({
       ...row,
-      tags: savedData[row.id]?.tags || [],
+      hints: savedData[row.id]?.hints || [],
       ...Object.keys(savedData[row.id] || {}).reduce((acc, key) => {
         if (key.startsWith('Attempt')) {
           acc[key] = savedData[row.id][key];
@@ -39,6 +182,25 @@ const App = () => {
     setFilteredData(updatedData);
     setTopics([...new Set(updatedData.map((row) => row.Topic))].sort());
   }, []);
+
+  // Disable body scroll when modal is open and preserve scroll position
+  useEffect(() => {
+    if (showHintsModal !== null) {
+      const scrollY = window.scrollY;
+      document.body.style.position = 'fixed';
+      document.body.style.width = '100%';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.overflow = 'hidden';
+      return () => {
+        const scrollYRestored = parseInt(document.body.style.top || '0', 10) * -1;
+        document.body.style.position = '';
+        document.body.style.width = '';
+        document.body.style.top = '';
+        document.body.style.overflow = '';
+        window.scrollTo(0, scrollYRestored);
+      };
+    }
+  }, [showHintsModal]);
 
   // Handle checkbox changes and save to local storage
   const handleCheckboxChange = (id, attempt) => {
@@ -58,12 +220,12 @@ const App = () => {
     localStorage.setItem('dsaSheetData', JSON.stringify(savedData));
   };
 
-  // Handle tag addition
-  const handleAddTag = (id) => {
-    if (newTag.trim() === '') return;
+  // Handle hint addition
+  const handleAddHint = (id) => (hint) => {
+    if (hint.trim() === '') return;
     const updatedData = dataState.map((row) =>
       row.id === id
-        ? { ...row, tags: [...(row.tags || []), newTag.trim()] }
+        ? { ...row, hints: [...(row.hints || []), hint.trim()] }
         : row
     );
     setData(updatedData);
@@ -72,20 +234,26 @@ const App = () => {
         applyFilters(row, topicFilter, difficultyFilter)
       )
     );
-    setNewTag('');
-    setEditingTags(null);
 
     const savedData = JSON.parse(localStorage.getItem('dsaSheetData')) || {};
     savedData[id] = savedData[id] || {};
-    savedData[id].tags = updatedData.find((row) => row.id === id).tags;
+    savedData[id].hints = updatedData.find((row) => row.id === id).hints;
     localStorage.setItem('dsaSheetData', JSON.stringify(savedData));
   };
 
-  // Handle tag removal
-  const handleRemoveTag = (id, tagIndex) => {
+  // Handle hint edit
+  const handleEditHint = (id) => (hintIndex) => {
+    const row = dataState.find((row) => row.id === id);
+    const editingHintText = document.querySelector(`.modal-content input.hint-input`).value;
+    if (editingHintText.trim() === '') return;
     const updatedData = dataState.map((row) =>
       row.id === id
-        ? { ...row, tags: row.tags.filter((_, index) => index !== tagIndex) }
+        ? {
+            ...row,
+            hints: row.hints.map((hint, index) =>
+              index === hintIndex ? editingHintText.trim() : hint
+            ),
+          }
         : row
     );
     setData(updatedData);
@@ -97,7 +265,27 @@ const App = () => {
 
     const savedData = JSON.parse(localStorage.getItem('dsaSheetData')) || {};
     savedData[id] = savedData[id] || {};
-    savedData[id].tags = updatedData.find((row) => row.id === id).tags;
+    savedData[id].hints = updatedData.find((row) => row.id === id).hints;
+    localStorage.setItem('dsaSheetData', JSON.stringify(savedData));
+  };
+
+  // Handle hint removal
+  const handleRemoveHint = (id) => (hintIndex) => {
+    const updatedData = dataState.map((row) =>
+      row.id === id
+        ? { ...row, hints: row.hints.filter((_, index) => index !== hintIndex) }
+        : row
+    );
+    setData(updatedData);
+    setFilteredData(
+      updatedData.filter((row) =>
+        applyFilters(row, topicFilter, difficultyFilter)
+      )
+    );
+
+    const savedData = JSON.parse(localStorage.getItem('dsaSheetData')) || {};
+    savedData[id] = savedData[id] || {};
+    savedData[id].hints = updatedData.find((row) => row.id === id).hints;
     localStorage.setItem('dsaSheetData', JSON.stringify(savedData));
   };
 
@@ -196,7 +384,7 @@ const App = () => {
               <th>Task Name</th>
               <th>Topic</th>
               <th>Difficulty</th>
-              <th>Tags</th>
+              <th>Hints</th>
               {Array.from({ length: 8 }, (_, i) => (
                 <th key={i} className="attempt-header">
                   <span className="tooltip">
@@ -225,138 +413,42 @@ const App = () => {
                     {row.Difficulty}
                   </span>
                 </td>
-                <td className="tags-cell">
-                  {editingTags === row.id ? (
-                    <div className="tag-input-container">
-                      <input
-                        type="text"
-                        value={newTag}
-                        onChange={(e) => setNewTag(e.target.value)}
-                        className="tag-input"
-                        placeholder="Add tag..."
-                        onKeyPress={(e) => {
-                          if (e.key === 'Enter') handleAddTag(row.id);
-                        }}
-                      />
-                      <button
-                        onClick={() => handleAddTag(row.id)}
-                        className="tag-save-button"
-                      >
-                        Save
-                      </button>
-                      <button
-                        onClick={() => setEditingTags(null)}
-                        className="tag-cancel-button"
-                      >
-                        Cancel
-                      </button>
-                    </div>
-                  ) : (
-                    <div className="tags-container">
-                      {(row.tags || []).slice(0, 2).map((tag, index) => (
-                        <span key={index} className="tag-badge">
-                          {tag}
-                          <button
-                            className="tag-remove-button"
-                            onClick={() => handleRemoveTag(row.id, index)}
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-4 w-4"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M6 18L18 6M6 6l12 12"
-                              />
-                            </svg>
-                          </button>
-                        </span>
-                      ))}
-                      {(row.tags || []).length > 2 && (
-                        <button
-                          className="see-more-button"
-                          onClick={() => setShowTagsModal(row.id)}
-                        >
-                          See More
-                        </button>
-                      )}
-                      <button
-                        onClick={() => setEditingTags(row.id)}
-                        className="add-tag-button"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-4 w-4"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M12 4v16m8-8H4"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                  )}
-                  {showTagsModal === row.id && (
-                    <div className="modal-overlay">
-                      <div className="modal-content">
-                        <h3 className="modal-title">All Tags for {row['Task Name']}</h3>
-                        <div className="modal-tags">
-                          {(row.tags || []).map((tag, index) => (
-                            <span key={index} className="tag-badge modal-tag">
-                              {tag}
-                              <button
-                                className="tag-remove-button"
-                                onClick={() => handleRemoveTag(row.id, index)}
-                              >
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  className="h-4 w-4"
-                                  fill="none"
-                                  viewBox="0 0 24 24"
-                                  stroke="currentColor"
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M6 18L18 6M6 6l12 12"
-                                  />
-                                </svg>
-                              </button>
-                            </span>
-                          ))}
-                        </div>
-                        <button
-                          onClick={() => setShowTagsModal(null)}
-                          className="modal-close-button"
-                        >
-                          Close
-                        </button>
-                      </div>
-                    </div>
-                  )}
+                <td className="hints-cell">
+                  <button
+                    onClick={() => setShowHintsModal(row.id)}
+                    className="view-hints-button"
+                  >
+                    {row.hints && row.hints.length > 0
+                      ? `View ${row.hints.length} Hint${
+                          row.hints.length > 1 ? 's' : ''
+                        }`
+                      : 'Add Hint'}
+                  </button>
                 </td>
                 {Array.from({ length: 8 }, (_, i) => (
                   <td key={i} className="text-center">
                     <input
                       type="checkbox"
                       checked={row[`Attempt${i + 1}`]}
-                      onChange={() => handleCheckboxChange(row.id, `Attempt${i + 1}`)}
+                      onChange={() =>
+                        handleCheckboxChange(row.id, `Attempt${i + 1}`)
+                      }
                       className="checkbox attempt-checkbox"
                       title={`Attempt ${i + 1}`}
                     />
                   </td>
                 ))}
+                {showHintsModal === row.id && (
+                  <Modal
+                    isOpen={showHintsModal === row.id}
+                    onClose={() => setShowHintsModal(null)}
+                    taskName={row['Task Name']}
+                    hints={row.hints}
+                    onAddHint={handleAddHint(row.id)}
+                    onEditHint={handleEditHint(row.id)}
+                    onRemoveHint={handleRemoveHint(row.id)}
+                  />
+                )}
               </tr>
             ))}
           </tbody>
