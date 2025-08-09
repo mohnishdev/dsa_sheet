@@ -116,8 +116,7 @@ html, body {
 
 .dsa-table {
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
+  border-collapse: collapse;
 }
 
 .table-header {
@@ -145,7 +144,7 @@ html, body {
   padding: 0.75rem;
   font-size: 0.85rem;
   color: #1f2937;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
   vertical-align: middle;
 }
 
@@ -171,6 +170,8 @@ html, body {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   background: linear-gradient(135deg, #ffffff 0%, #e6f3fa 100%);
   border: 2px solid #4f46e5;
+  display: block;
+  margin: 0 auto;
 }
 
 .attempt-checkbox:checked {
@@ -184,11 +185,19 @@ html, body {
 
 .attempt-header {
   position: relative;
+  text-align: center;
+  min-width: 50px;
+}
+
+.table-row td.text-center {
+  text-align: center;
+  min-width: 50px;
 }
 
 .tooltip {
   position: relative;
   cursor: help;
+  display: inline-block;
 }
 
 .tooltip-text {
@@ -217,7 +226,6 @@ html, body {
 .tags-cell {
   display: flex;
   align-items: center;
-  height: 100%;
 }
 
 .tags-container {
@@ -639,6 +647,16 @@ html, body {
   .modal-close-button {
     padding: 0.4rem 1rem;
   }
+
+  .attempt-header,
+  .table-row td.text-center {
+    min-width: 40px;
+  }
+
+  .attempt-checkbox {
+    width: 1rem;
+    height: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -710,5 +728,10 @@ html, body {
 
   .modal-close-button {
     padding: 0.3rem 0.75rem;
+  }
+
+  .attempt-header,
+  .table-row td.text-center {
+    min-width: 35px;
   }
 }

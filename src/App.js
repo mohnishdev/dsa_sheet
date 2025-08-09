@@ -196,10 +196,8 @@ const App = () => {
               <th>Task Name</th>
               <th>Topic</th>
               <th>Difficulty</th>
-              <th>Due Date</th>
-              <th>Status</th>
               <th>Tags</th>
-              {Array.from({ length: 5 }, (_, i) => (
+              {Array.from({ length: 8 }, (_, i) => (
                 <th key={i} className="attempt-header">
                   <span className="tooltip">
                     {getOrdinal(i + 1)}
@@ -227,8 +225,6 @@ const App = () => {
                     {row.Difficulty}
                   </span>
                 </td>
-                <td>{row['Due Date']}</td>
-                <td>{row.Status}</td>
                 <td className="tags-cell">
                   {editingTags === row.id ? (
                     <div className="tag-input-container">
@@ -350,7 +346,7 @@ const App = () => {
                     </div>
                   )}
                 </td>
-                {Array.from({ length: 5 }, (_, i) => (
+                {Array.from({ length: 8 }, (_, i) => (
                   <td key={i} className="text-center">
                     <input
                       type="checkbox"
